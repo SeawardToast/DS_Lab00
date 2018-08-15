@@ -60,18 +60,17 @@ int loop(){
         cout << "" <<endl;
     }
 }
-
 int main(){
     int input;
     cout << "Welcome to Lab00, which excercise would you like to run? (1, 2, 3)" << endl;
     cin >> input;
-    if (input == 1){
-        info();
-    } else if(input == 2) {
-        addition();
-    } else if(input == 3) {
-        loop();
-    } else {
-        cout << "The selection you have entered is invalid. Try again!" << endl;
-    }
+	switch (input){
+		case 1 : info();
+		break;
+		case 2 : addition();
+		break;
+		case 3 : loop();
+		break;
+		default : cout << "The selection you have entered is invalid. Try again!" << endl;
+	}
 }
