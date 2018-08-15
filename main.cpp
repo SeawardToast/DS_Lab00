@@ -16,6 +16,7 @@ int info(){
     cout << "I was a pizza delivery driver for Dominos, I've played soccer since I was three years old." << endl;
     cout << "I love Game of Thrones" << endl;
     cout << "I plan on being a programmer somewhere doing something, preferably somewhere in Colorado. Working for a start-up would be fun" << endl;
+	return 0;
 }
 
 //function to add the first n terms of a positive integer
@@ -44,6 +45,7 @@ int addition(){
     	i_counter = i;
     }
     cout << "The sum of the first " << i_counter+1 << " terms is " << sum <<endl;
+	return 0;
 }
 
 int loop(){
@@ -59,7 +61,9 @@ int loop(){
         var = var -2;
         cout << "" <<endl;
     }
+	return 0;
 }
+
 int main(){
     int input;
     cout << "Welcome to Lab00, which excercise would you like to run? (1, 2, 3)" << endl;
@@ -73,4 +77,5 @@ int main(){
 		break;
 		default : cout << "The selection you have entered is invalid. Try again!" << endl;
 	}
+	return 0;
 }
